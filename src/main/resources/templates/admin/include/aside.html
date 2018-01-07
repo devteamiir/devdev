@@ -28,67 +28,43 @@
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
             <li class="header">Menu Principal</li>
+            
             <li class="treeview">
-              <a href="">
-                <i class="fa fa-dashboard"></i> <span>Tableau de bord </span>
-              </a>
-              
-            </li>
-            <li class="treeview active">
               <a href="">
                 <i class="glyphicon glyphicon-plus"></i> <span>Gesion des Pannes</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
-               <ul class="treeview-menu menu-open" style="display: block;">
+               <ul class="treeview-menu menu-open" style="display: none;">
                 <li class=""><a href="listePannes"><i class="fa fa-circle-o"></i> Liste des Pannes</a></li>
                 <li class=""><a href="ajoutPanne"><i class="fa fa-circle-o"></i> Ajouter Panne</a></li>
                 					  
               </ul>
              
             </li>
-            
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-files-o"></i>
-                <span>Ressources</span>
+             <li class="treeview">
+              <a href="">
+                <i class="glyphicon glyphicon-plus"></i> <span>Gesion des Utilisateur</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
-              <ul class="treeview-menu">
-                <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Equipes</a></li>
-                <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Créer equipe</a></li>
-                <li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Infos sur collaborateurs</a></li>
+               <ul class="treeview-menu menu-open" style="display: none;">
+                <li class=""><a href="listeUtilisateurs"><i class="fa fa-circle-o"></i> Liste des Utilisateurs</a></li>
+                <li class=""><a href="ajoutUtilisateur"><i class="fa fa-circle-o"></i> Ajouter Utilisateur</a></li>
+                					  
               </ul>
+             
             </li>
-            <li>
-              <a href="/ClinetControllerAffichage">
-                <i class="fa fa-meh-o"></i> <span>Clients</span> 
-              </a>
-            </li>
-            <li>
-              <a href="/PersonnelController">
-                <i class="fa fa-user-plus"></i> <span>Personnel</span> 
-              </a>
-            </li>
-           
             <li class="treeview">
-              <a href="#">
-                <i class="glyphicon glyphicon-remove-sign"></i>
-                <span>Risques</span>
-                <i class="fa fa-angle-left pull-right"></i>
+              <a href="">
+                <i class="glyphicon glyphicon-plus"></i> <span>Gesion des Clients</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
-              <ul class="treeview-menu">
-                <li><a href="/DeclarationController"><i class="fa fa-circle-o"></i> Nouvelle Déclaration</a></li>
-                <li><a href="/DeclarationControllerAffichage"><i class="fa fa-circle-o"></i> Afficher Déclarations</a></li>
-                <li><a href="/ReunionController"><i class="fa fa-circle-o"></i> Réunion</a></li>
-                
+               <ul class="treeview-menu menu-open" style="display: none;">
+                <li class=""><a href="listeClients"><i class="fa fa-circle-o"></i> Liste des Clients</a></li>
+                <li class=""><a href="ajoutClient"><i class="fa fa-circle-o"></i> Ajouter Client</a></li>
+                					  
               </ul>
+             
             </li>
-
             
             
-             <li>
-              <a href="pages/gp/mail/email.jsp">
-                <i class="glyphicon glyphicon-envelope"></i> <span>Email</span> 
-              </a>
-            </li>
+            
             </ul>
         </section>
         <!-- /.sidebar -->

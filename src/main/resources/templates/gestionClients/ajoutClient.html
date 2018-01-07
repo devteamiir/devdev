@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymleaf.org">
+<head th:replace="admin/include/css :: css"></head>
+
+
+<body class="skin-blue">
+	<!--   <div th:replace="admin/include/css::css"></div> -->
+	<div class="wrapper">
+
+		<div th:replace="admin/include/header::header"></div>
+		<!-- Left side column. contains the logo and sidebar -->
+
+		<div th:replace="admin/include/aside::aside"></div>
+
+		<!-- Right side column. Contains the navbar and content of the page -->
+		<div class="content-wrapper">
+			<!-- Content Header (Page header) -->
+			<section class="content-header">
+				<h1>
+					Ajout <small>Clients</small>
+				</h1>
+				<ol class="breadcrumb">
+					<li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+					<li class="active">Clients</li>
+				</ol>
+			</section>
+
+			<!-- Main content -->
+			<section class="content">
+
+
+				<div class="container">
+					<h2 class="bg-primary text-white">Ajout Client</h2>
+
+					<form action="ajoutClient" method="post">
+						<div class="">
+
+							<div>
+								<label for="nom">Nom:</label><input type="text"
+									name="nom" class="form-control"></input>
+							</div>
+							<div>
+								<label for="prenom">prenom	:</label><input type="text"
+									name="prenom" class="form-control"></input>
+							</div>
+							<div>
+								<label for="email">Email:</label><input type="email"
+									name="email" class="form-control"></input>
+							</div>
+							<div>
+								<label for="adresse">adresse:</label><textarea rows="4" cols="50" 
+									name="adresse" class="form-control"></textarea>
+							</div>
+							<div>
+								<label for="tel">Tel:</label><input type="tel"
+									name="tel" class="form-control"></input>
+							</div>
+							<div>
+								<label for="login">Login:</label><input type="text"
+									name="login" class="form-control"></input>
+							</div>
+							<div>
+								<label for="password">Password:</label><input type="password"
+									name="password" class="form-control"></input>
+							</div>
+							
+							<div>
+								<label for="numPermis">Numero Permis:</label><input type="text"
+									name="numPermis" class="form-control"></input>
+							</div>
+							
+							<div>
+								<label for="dateNaissance">Date de naissance:</label><input type="date"
+									name="dateU" class="form-control"></input>
+							</div>
+							
+							
+							<div>
+								<input type="submit" name="enregistrer" class="btn btn-default"></input>
+							</div>
+
+						</div>
+					</form>
+				</div>
+
+			</section>
+			<!-- /.content -->
+		</div>
+		<!-- /.content-wrapper -->
+		<footer th:replace="admin/include/footer::footer"></footer>
+	</div>
+	<!-- ./wrapper -->
+	<footer th:replace="admin/include/js::js"></footer>
+</body>
+</html>
