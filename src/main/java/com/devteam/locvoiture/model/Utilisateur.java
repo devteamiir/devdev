@@ -4,12 +4,13 @@ import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 @Entity
 public class Utilisateur {
 	@Id
-	@GeneratedValue
-private int idUtlisateur;
+	@GeneratedValue(strategy = GenerationType.AUTO)
+private int idUtilisateur;
 private String nom;
 private String prenom;
 private String email;
@@ -19,11 +20,11 @@ private String login;
 private String password;
 private Date dateNaissance;
 
-public int getIdUtlisateur() {
-	return idUtlisateur;
+public int getIdUtilisateur() {
+	return idUtilisateur;
 }
-public void setIdUtlisateur(int idUtlisateur) {
-	this.idUtlisateur = idUtlisateur;
+public void setIdUtilisateur(int idUtlisateur) {
+	this.idUtilisateur = idUtlisateur;
 }
 public String getNom() {
 	return nom;
@@ -73,6 +74,32 @@ public Date getDateNaissance() {
 public void setDateNaissance(Date dateNaissance) {
 	this.dateNaissance = dateNaissance;
 }
+public Utilisateur() {
+	super();
+	// TODO Auto-generated constructor stub
+}
+public Utilisateur(int idUtilisateur, String nom, String prenom, String email, String adresse, String tel, String login,
+		String password, Date dateNaissance) {
+	super();
+	this.idUtilisateur = idUtilisateur;
+	this.nom = nom;
+	this.prenom = prenom;
+	this.email = email;
+	this.adresse = adresse;
+	this.tel = tel;
+	this.login = login;
+	this.password = password;
+	this.dateNaissance = dateNaissance;
+}
+@Override
+public String toString() {
+	return "Utilisateur [idUtilisateur=" + idUtilisateur + ", nom=" + nom + ", prenom=" + prenom + ", email=" + email
+			+ ", adresse=" + adresse + ", tel=" + tel + ", login=" + login + ", password=" + password
+			+ ", dateNaissance=" + dateNaissance + "]";
+}
+
+
+
 
 
 

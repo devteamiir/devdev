@@ -17,11 +17,11 @@
 			<!-- Content Header (Page header) -->
 			<section class="content-header">
 				<h1>
-					Liste <small>pannes</small>
+					Liste <small>Users</small>
 				</h1>
 				<ol class="breadcrumb">
 					<li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-					<li class="active">Pannes</li>
+					<li class="active">Users</li>
 				</ol>
 			</section>
 
@@ -32,29 +32,38 @@
 				<div class="container">
 
 					<h2 class="bg-primary text-white">Pannes</h2>
-					<a th:href="@{/ajoutPanne}">Ajouter Panne</a>
+					<a th:href="@{/ajoutUtilisateur}">Ajouter Panne</a>
 					<table border="1" class="table">
 						<tr>
 							<th>Id</th>
-							<th>type Panne</th>
-							<th>datePanne</th>
-							<th>montant</th>
-							<th>description</th>
+							<th>Nom</th>
+							<th>Prenom</th>
+							<th>Email</th>
+							<th>Adresse</th>
+							<th>Tel</th>
+							<th>Login</th>
+							<th>Password</th>
+							<th>date de naissance</th>
 							<th>Action</th>
 
 
 						</tr>
 
-						<tr th:each="r: ${pannes}">
-							<th th:text="${r.idPanne}"></th>
-							<th th:text="${r.typePanne}"></th>
-							<th th:text="${r.datePanne}"></th>
-
-							<th th:text="${r.montant}"></th>
-							<th th:text="${r.description}"></th>
-							<th><a
-								th:href="@{/suppressionPanne?n={n}(n=${r.idPanne})}">Supprimer</a>
-								<a th:href="@{/modificationPanne?n={n}(n=${r.idPanne})}">modifier</a></th>
+						<tr th:each="r: ${utilisateurs}">
+							<td th:text="${r.idUtilisateur}"></td>
+							<td th:text="${r.nom}"></td>
+							<td th:text="${r.prenom}"></td>
+							<td th:text="${r.email}"></td>
+							<td th:text="${r.adresse}"></td>
+							<td th:text="${r.tel}"></td>
+							<td th:text="${r.login}"></td>
+							<td th:text="${r.password}"></td>
+							<td th:text="${r.dateNaissance}"></td>
+							
+							
+							<td><a
+								th:href="@{/suppressionUtilisateur?n={n}(n=${r.idUtilisateur})}">Supprimer</a>
+								<a th:href="@{/modificationUtilisateur?n={n}(n=${r.idUtilisateur})}">modifier</a></td>
 						</tr>
 
 
