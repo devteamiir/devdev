@@ -20,7 +20,7 @@ import com.devteam.locvoiture.service.PanneServiceImpl;
 
 @Controller
 @RequestMapping("/")
-public class ActionController {
+public class PanneController {
 	
 	
 	
