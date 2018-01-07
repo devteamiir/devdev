@@ -13,6 +13,19 @@ public class Secretaire  extends Utilisateur{
 		// TODO Auto-generated constructor stub
 	}
 	
+	public Secretaire( String nom, String prenom, String email, String adresse, String tel,
+			String login, String password, Date dateNaissance) {
+		super( nom, prenom, email, adresse, tel, login, password, dateNaissance);
+		// TODO Auto-generated constructor stub
+	}
+
+	public Secretaire() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	
 	
 
 }

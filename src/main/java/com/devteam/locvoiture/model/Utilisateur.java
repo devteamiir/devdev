@@ -111,6 +111,20 @@ public class Utilisateur {
 		this.password = password;
 		this.dateNaissance = dateNaissance;
 	}
+	
+	public Utilisateur( String nom, String prenom, String email, String adresse, String tel,
+			String login, String password, Date dateNaissance) {
+		super();
+		
+		this.nom = nom;
+		this.prenom = prenom;
+		this.email = email;
+		this.adresse = adresse;
+		this.tel = tel;
+		this.login = login;
+		this.password = password;
+		this.dateNaissance = dateNaissance;
+	}
 
 	@Override
 	public String toString() {
